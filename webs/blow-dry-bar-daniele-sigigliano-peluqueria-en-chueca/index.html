@@ -1,0 +1,412 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blow Dry Bar - Daniele Sigigliano, peluquería de prestigio en Chueca, Madrid. Especialistas en peinados, cortes y tratamientos capilares. Valoración 4.9/5. ¡Reserva tu cita!">
+    <meta name="keywords" content="peluquería Chueca, peluquería Madrid, blow dry bar, Daniele Sigigliano, peinados Madrid, corte de pelo Chueca, tratamientos capilares">
+    <meta name="author" content="Blow Dry Bar - Daniele Sigigliano">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Blow Dry Bar - Daniele Sigigliano - Peluquería en Chueca, Madrid">
+    <meta property="og:description" content="Tu peluquería de confianza en el corazón de Chueca. Servicios premium de peinado, corte y tratamientos capilares.">
+    <meta property="og:type" content="local.business">
+    <meta property="og:locale" content="es_ES">
+    <title>Blow Dry Bar - Daniele Sigigliano | Peluquería en Chueca, Madrid</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "Blow Dry Bar - Daniele Sigigliano",
+        "image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AU_ZVEG_k3k4ZQLyI-PGco1NK5Nvydw1XeDJcST80ucIlORj6_uheRzLc96ZbfHOycIYlLBskCdsQDehc0NiDD2NsvbOuSqmyK7VFOQDkIrjGtW4pORt0CTcs7zLpBT_e6m-R0Gi3oAQcX2lkIRksUCuoTUJR_6iEOEGlYqJU1hES6VTlXo_mzxuQ1v5oulkxsAuhDOxUaImImc7wN8OilAHInKxX0T8K4no4LjtnSWGO-5BOYQbVJalw5U7ax6GAoUXECkFTh7sBdiAZkUk7dlubwqeL5N3ZczyECiRNOwtqXgJnQ&key=AIzaSyBz13o5dXT5i6xaoujt05LtHNUMttRzCb8",
+        "telephone": "+34910096594",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C. de Pelayo, 76",
+            "addressLocality": "Madrid",
+            "addressRegion": "Centro",
+            "postalCode": "28004",
+            "addressCountry": "ES"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "ratingCount": "150"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.4234",
+            "longitude": "-3.6985"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #2c2c2c;
+            --secondary: #c9a96e;
+            --accent: #e8d5b7;
+            --light: #faf8f5;
+            --dark: #1a1a1a;
+            --text: #4a4a4a;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--secondary);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AU_ZVEG_k3k4ZQLyI-PGco1NK5Nvydw1XeDJcST80ucIlORj6_uheRzLc96ZbfHOycIYlLBskCdsQDehc0NiDD2NsvbOuSqmyK7VFOQDkIrjGtW4pORt0CTcs7zLpBT_e6m-R0Gi3oAQcX2lkIRksUCuoTUJR_6iEOEGlYqJU1hES6VTlXo_mzxuQ1v5oulkxsAuhDOxUaImImc7wN8OilAHInKxX0T8K4no4LjtnSWGO-5BOYQbVJalw5U7ax6GAoUXECkFTh7sBdiAZkUk7dlubwqeL5N3ZczyECiRNOwtqXgJnQ&key=AIzaSyBz13o5dXT5i6xaoujt05LtHNUMttRzCb8') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            color: var(--white);
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--secondary);
+            color: var(--dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--dark);
+        }
+        
+        .btn-primary:hover {
+            background: #b8954d;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(201, 169, 110, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--dark);
+        }
+        
+        /* Rating */
+        .rating-section {
+            background: var(--white);
+            padding: 3rem 2rem;
+        }
+        
+        .rating-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .rating-item {
+            text-align: center;
+        }
+        
+        .rating-stars {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .rating-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .rating-text {
+            color: var(--text);
+            font-size: 0.9rem;
+        }
+        
+        /* Servicios */
+        .services {
+            padding: 6rem 2rem;
+            background: var(--light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: var(--text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .section-title span {
+            color: var(--secondary);
+        }
+        
+        .services-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            color: var(--text);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        
+        /* About */
+        .about {
+            padding: 6rem 2rem;
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-content h2 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-content h2 span {
+            color: var(--secondary);
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+        
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top:
