@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/webs/:slug", "destination": "/webs/:slug/index.html" },
+    { "source": "/webs/:slug/", "destination": "/webs/:slug/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/webs/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    }
+  ]
+}
